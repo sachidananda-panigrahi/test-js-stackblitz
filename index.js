@@ -25,3 +25,16 @@ async function getSumOfTwoNum(n1, n2) {
 }
 
 getSumOfTwoNum(3, 5);
+
+// const controller = new AbortController()
+
+// 5 second timeout:
+
+// const timeoutId = setTimeout(() => controller.abort(), 5000)
+
+// fetch(url, { signal: controller.signal }).then(response => {
+// completed request before timeout fired
+
+// If you only wanted to timeout the request, not the response, add:
+// clearTimeout(timeoutId)
+// })
